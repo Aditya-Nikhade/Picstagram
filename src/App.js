@@ -19,8 +19,8 @@ const style = {
   maxWidth: 400,
   width: "80%",
   backgroundColor: 'background.paper',
-  border: 'none', // Remove border
-  borderRadius: 6, // Set border-radius
+  border: 'none',
+  borderRadius: 6, 
   boxShadow: 24,
   p: 4,
 };
@@ -76,6 +76,7 @@ export default function App() {
       unsubscribe();
     };
   }, [user, username]);
+
   const signUp = async (e) => {
     e.preventDefault();
     try {
@@ -108,7 +109,6 @@ export default function App() {
   }
 
   useEffect(() => {
-    // Add or remove 'no-scrollbar' class based on isLoggedIn value
     if (user) {
       document.body.classList.remove('no-scrollbar');
     } else {

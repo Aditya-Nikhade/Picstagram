@@ -1,18 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-.no-scrollbar{
+
+.no-scrollbar {
   overflow-y: hidden;
 }
+
 .flexi {
   display: flex;
 }
 
-input[name="username"], input[name="email"],input[name="password"]{
-    width: 100%;
+input[name="username"],
+input[name="email"],
+input[name="password"] {
+  width: 100%;
 }
 
 .header {
@@ -93,13 +97,16 @@ input[name="username"], input[name="email"],input[name="password"]{
   justify-content: space-between;
   z-index: 10;
 }
-#signup,#signin{
+
+#signup,
+#signin {
   padding: 6px 12px;
   cursor: pointer;
   border: none;
   background-color: lightgray;
   border-radius: 5px;
 }
+
 .left-section .header {
   position: sticky;
   top: 0;
@@ -107,28 +114,30 @@ input[name="username"], input[name="email"],input[name="password"]{
 
 .left-section .header_logo {
   position: sticky;
-  top: 20px; /* Adjust the top value as needed */
+  top: 20px;
 }
 
 .button_container {
   position: sticky;
-  bottom: 20px; /* Adjust the bottom value as needed */
+  bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-input[type="text"]{
-    border: 1px solid lightgray;
-    border-radius: 4px;
-    padding: 5px 8px;
-    font-size: 16px;
-    margin-bottom: 5px;
+input[type="text"] {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
-input[type="text"]:focus{
+
+input[type="text"]:focus {
   outline: none;
 }
+
 .buttons_header {
   display: flex;
   flex-direction: column;
@@ -140,8 +149,8 @@ input[type="text"]:focus{
   text-align: center;
 }
 
-.login-message{
-  
+.login-message {
+
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -149,11 +158,12 @@ input[type="text"]:focus{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .display_message {
   background-color: transparent;
   position: absolute;
@@ -182,9 +192,9 @@ input[type="text"]:focus{
   object-fit: cover;
   overflow: hidden;
   margin: 0 auto;
-} 
+}
 
-.profile_info{
+.profile_info {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -194,7 +204,6 @@ input[type="text"]:focus{
   cursor: pointer;
 }
 
-/* Media Query for screens with a maximum width of 450px */
 @media screen and (max-width: 450px) {
   .flexi {
     display: flex;
@@ -233,45 +242,52 @@ input[type="text"]:focus{
     background-color: white;
     width: 50%;
   }
-  .post{
+
+  .post {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 550px) and (max-width: 666px) {
-  .left-section{
+  .left-section {
     flex: 0.1;
   }
-  .display_message{
+
+  .display_message {
     font-size: 20px;
   }
-  .right{
+
+  .right {
     flex: 0.9;
   }
 }
+
 @media screen and (min-width: 450px) and (max-width: 550px) {
-  .left-section{
+  .left-section {
     flex: 0.05;
   }
-  .display_message{
+
+  .display_message {
     font-size: 18px;
   }
-  .right{
+
+  .right {
     flex: 0.95;
   }
 }
 
 @media screen and (max-width: 650px) and (min-width: 450px) {
-    .display_message{
-      height: 45%;
-      width: 75%;
-    }
+  .display_message {
+    height: 45%;
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  .login-message{
+  .login-message {
     position: relative;
     overflow-y: hidden;
-  } 
+  }
 
   .display_message {
     position: absolute;

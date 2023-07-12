@@ -1,62 +1,74 @@
-.post{
+.post {
     max-width: 500px;
     width: 100%;
     background-color: white;
     margin-bottom: 35px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.post_image{
+
+.post_image {
     width: 100%;
     object-fit: contain;
 }
-.post_header{
+
+.post_header {
     display: flex;
     align-items: center;
-    padding: 3% 3%; 
+    padding: 3% 3%;
 }
-.avatar{
+
+.avatar {
     margin-right: 9px;
 }
-.text_post{
+
+.text_post {
     padding: 10px 8px;
     padding-top: 2px;
 }
-.text_post span, .post_comments span{
+
+.text_post span,
+.post_comments span {
     margin-left: 10px;
 }
-.comments{
+
+.comments {
     display: flex;
     margin-top: 10px;
 }
-.like_button{
+
+.like_button {
     display: flex;
     align-items: center;
 }
-.postButton{
+
+.postButton {
     flex: 0;
     background-color: rgb(29, 61, 239);
     color: white;
     cursor: pointer;
     padding: 10px;
 }
-.postInput{
-    flex:1;
+
+.postInput {
+    flex: 1;
     padding: 10px;
     border: 0;
     border-top: 1.2px solid lightgray;
     outline: 0;
     border-right: 0px;
 }
-input[type="text"] .postInput{
+
+input[type="text"] .postInput {
     margin-bottom: 0px;
 }
-.post_comments{
+
+.post_comments {
     padding: 8px;
 }
 
 
 @media screen and (max-width: 450px) {
-    .post{
+    .post {
         width: 90%;
     }
 }

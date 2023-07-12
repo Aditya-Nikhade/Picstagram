@@ -5,8 +5,8 @@
     background-color: white;
     padding: 10px 15px;
     border: 0.5px solid lightgray;
-    align-items: center; /* Align items vertically in the container */
-    justify-content: center; /* Create space between the elements */
+    align-items: center; 
+    justify-content: center;
   }
   
   .upload_image {
@@ -17,7 +17,7 @@
     border-top: 1px solid gray;
     background-color: white;
     width: 80%;
-    padding-bottom: 10px; /* Add some bottom padding to create space */
+    padding-bottom: 10px; 
   }
   
   .upload_progress {
@@ -36,7 +36,7 @@
   .buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px; /* Add some top margin for spacing */
+    margin-top: 10px; 
   }
   button{
     cursor: pointer;
