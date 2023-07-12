@@ -1,0 +1,122 @@
+.profile {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile_details {
+    background-color: white;
+    padding: 25px;
+    border: none;
+    border-radius: 7px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .profile_pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom: 20px;
+    margin-right: 17px;
+  }
+  
+  .profile_details button {
+    outline: 0;
+    border: 0;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .edit_username {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .username {
+    margin-right: 10px;
+  }
+  
+  .button_group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .edit_button,
+  .cancel_button,
+  .save_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .edit_button:hover,
+  .cancel_button:hover,
+  .save_button:hover {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+  
+  .edit_button:focus,
+  .cancel_button:focus,
+  .save_button:focus {
+    outline: none;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 500px) {
+    .profile_details {
+      padding: 15px;
+    }
+  
+    .pic_display {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .edit_username {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 15px;
+    }
+  
+    .button_group {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .edit_button,
+    .cancel_button,
+    .save_button {
+      margin: 5px 0;
+    }
+  }
+  
